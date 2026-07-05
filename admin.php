@@ -35,7 +35,7 @@ if ($action === 'login' && $_SERVER['REQUEST_METHOD'] === 'POST') {
 // ── Logout ─────────────────────────────────────────────────────────────────
 if ($action === 'logout') {
     session_destroy();
-    header('Location: admin.php');
+    header('Location: admin.php?status=loggoutout');
     exit;
 }
 
